@@ -15,7 +15,7 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(compression());
 
-app.use("todo", todoRouter);
+app.use("/todo", todoRouter);
 
 app.get("/", (res, req) => {
   res.send("Server is running");
